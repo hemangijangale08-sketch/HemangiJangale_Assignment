@@ -1,0 +1,13 @@
+ Dependency Injection (DI) is a design pattern used to achieve loose coupling.
+
+In ASP.NET Core:
+- Services are registered in Program.cs using AddScoped/AddSingleton.
+- They are injected into controllers via constructor.
+
+Example:
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+
+Benefits:
+- Loose coupling
+- Better testability
+- Easy maintenance
